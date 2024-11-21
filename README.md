@@ -1,4 +1,4 @@
-# XenoAssignment
+# CampignAssignment
 
 A full-stack project that enables efficient management of customer data, campaigns, and audiences. It includes a React frontend and a Node.js/Express backend, with MongoDB for data storage and Redis for messaging.
 
@@ -18,27 +18,30 @@ A full-stack project that enables efficient management of customer data, campaig
 ## Features
 
 ### Frontend
+
 - Built with React and Vite for a fast development experience.
 - Responsive design with Tailwind CSS.
 - Features:
-    - User authentication (Signup/Login).
-    - Campaign creation and management.
-    - Audience management.
-    - Dashboard for key metrics.
+  - User authentication (Signup/Login).
+  - Campaign creation and management.
+  - Audience management.
+  - Dashboard for key metrics.
 
 ### Backend
+
 - Built with Node.js and Express.
 - MongoDB for database management.
 - Redis for pub/sub messaging.
 - RESTful API design for managing:
-    - Campaigns.
-    - Customers.
-    - Audiences.
-    - Orders
-    - Users
+  - Campaigns.
+  - Customers.
+  - Audiences.
+  - Orders
+  - Users
 - Secure routes with authentication middleware.
 
 ### DevOps
+
 - Docker support for easy containerization and deployment.
 - Configurable environment variables for flexibility.
 
@@ -55,7 +58,7 @@ A full-stack project that enables efficient management of customer data, campaig
 ## Project Structure
 
 ```
-XenoAssignment
+CampignAssignment
 ├── client/                # Frontend React application
 │   ├── public/            # Static assets
 │   └── src/               # React components and logic
@@ -75,18 +78,21 @@ XenoAssignment
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js (v16+ recommended)
 - Docker (optional, for containerized setup)
 
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/Chirag-Punia/XenoAssignment.git
-   cd XenoAssignment
+   cd CampignAssignment
    ```
 
 2. Install dependencies for both frontend and backend:
+
    ```bash
    # Install backend dependencies
    cd server
@@ -102,6 +108,7 @@ XenoAssignment
 ## Environment Variables
 
 Create a `.env` file in the `server` directory with the following keys:
+
 ```
 MONGO_URI=mongodb://localhost:27017/xeno
 REDIS_URL=redis://localhost:6379
@@ -115,12 +122,14 @@ JWT_SECRET=your_jwt_secret
 ### Development
 
 1. Start the backend:
+
    ```bash
    cd server
    npm start
    ```
 
 2. Start the frontend:
+
    ```bash
    cd client
    npm run dev
@@ -131,13 +140,14 @@ JWT_SECRET=your_jwt_secret
 ### Docker Setup
 
 1. Build and start the containers:
+
    ```bash
    docker-compose up --build
    ```
 
 2. The app will be accessible at:
-    - Frontend: `http://localhost:5173`
-    - Backend: `https://xenoassignment.onrender.com`
+   - Frontend: `http://localhost:5173`
+   - Backend: `https://xenoassignment.onrender.com`
 
 ---
 
@@ -164,5 +174,4 @@ JWT_SECRET=your_jwt_secret
 
 This project is licensed under the MIT License.
 
---- 
-
+---
